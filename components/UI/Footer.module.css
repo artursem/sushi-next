@@ -1,0 +1,14 @@
+.footer {
+	color: var(--white);
+	background: var(--black);
+	height: 3rem;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer a {
+	color: var(--white);
+}

@@ -1,0 +1,33 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: var(--white);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+	margin: 0;
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.title {
+	font-weight: 800;
+	margin: 1rem;
+}
+
+.links {
+	list-style: none;
+	display: flex;
+
+	flex-direction: row;
+}
+
+.links li {
+	padding: 0 1rem;
+}

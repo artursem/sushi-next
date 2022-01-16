@@ -1,16 +1,31 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
+
+:root {
+	--black: #1f1f1f;
+	--white: #fefefe;
+	--gray: rgba(255, 255, 255, 0.9);
+	--accent: #694040;
 }
 
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Merriweather Sans', sans-serif;
+	color: var(--black);
+}
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+div,
+header {
+	/* border: 1px solid rgb(146, 146, 206); */
 }

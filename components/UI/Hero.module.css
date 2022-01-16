@@ -1,0 +1,31 @@
+.hero {
+	height: 24rem;
+	background: linear-gradient(
+			90deg,
+			rgba(255, 255, 255, 0.4),
+			rgba(0, 0, 0, 0.8)
+		),
+		url('../../public/hero-sushi2.jpg');
+	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+
+	color: var(--gray);
+	line-height: 1.7rem;
+}
+
+.hero h3 {
+	font-size: 2rem;
+	margin: 1rem;
+}
+
+.hero p {
+	margin: 1rem;
+	text-align: right;
+	max-width: 500px;
+	font-style: italic;
+	font-weight: 300;
+}
