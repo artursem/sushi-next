@@ -1,0 +1,25 @@
+.section {
+	width: 70%;
+	margin: 3rem auto;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	min-height: 300px;
+
+	border: 1px solid var(--black);
+	border-radius: 10px;
+}
+
+.img {
+	background: url('../../public/image-chef.jpg');
+	background-size: cover;
+	background-position: center;
+	flex: 1;
+	border-right: 1px solid var(--black);
+	border-radius: 10px 0 0 10px;
+}
+
+.text {
+	flex: 2;
+	margin: auto 1rem auto 1rem;
+}

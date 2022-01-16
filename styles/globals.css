@@ -13,6 +13,7 @@ body {
 	margin: 0;
 	font-family: 'Merriweather Sans', sans-serif;
 	color: var(--black);
+	font-weight: 300;
 }
 a {
 	color: inherit;
@@ -23,9 +24,4 @@ a {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-}
-
-div,
-header {
-	/* border: 1px solid rgb(146, 146, 206); */
 }

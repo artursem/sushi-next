@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import classes from './NavHeader.module.css';
 import Logo from './icons/Logo';
 const NavHeader = () => {
@@ -9,10 +10,26 @@ const NavHeader = () => {
 			</span>
 			<nav>
 				<ul className={classes.links}>
-					<li>link1</li>
-					<li>link1</li>
-					<li>link1</li>
-					<li>link1</li>
+					<li>
+						<Link href='/'>
+							<a>Home</a>
+						</Link>
+					</li>
+					<li>
+						<Link href='/reservations'>
+							<a>Reservations</a>
+						</Link>
+					</li>
+					<li>
+						<Link href='/order'>
+							<a>Order</a>
+						</Link>
+					</li>
+					<li>
+						<Link href='/contact'>
+							<a>Contact us</a>
+						</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>

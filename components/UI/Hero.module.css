@@ -7,6 +7,7 @@
 		),
 		url('../../public/hero-sushi2.jpg');
 	background-size: cover;
+	background-position-y: center;
 
 	display: flex;
 	flex-direction: column;
