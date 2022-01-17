@@ -12,7 +12,7 @@ const MenuItem = ({ item }) => {
 			<div
 				className={classes.foto}
 				style={{
-					backgroundImage: `url('https://nabe.pl/wp-content/uploads/2020/07/hosomaki-awokado-nabe-400x400.jpg')`,
+					backgroundImage: `url('/sushi/${item.id}.jpg')`,
 				}}
 			>
 				foto
