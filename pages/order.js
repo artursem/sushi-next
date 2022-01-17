@@ -1,9 +1,12 @@
-// import { menu } from '../components/sushi/items';
+import Head from 'next/head';
 import Menu from '../components/sushi/Menu';
-
 const Order = (props) => {
 	return (
 		<main>
+			<Head>
+				<title>order - omakase</title>
+				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
+			</Head>
 			<Menu menu={props.menu} />
 		</main>
 	);
