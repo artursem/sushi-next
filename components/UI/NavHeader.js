@@ -12,22 +12,22 @@ const NavHeader = () => {
 				<ul className={classes.links}>
 					<li>
 						<Link href='/'>
-							<a>Home</a>
+							<a className={classes.link}>Home</a>
 						</Link>
 					</li>
 					<li>
 						<Link href='/reservations'>
-							<a>Reservations</a>
+							<a className={classes.link}>Reservations</a>
 						</Link>
 					</li>
 					<li>
 						<Link href='/order'>
-							<a>Order</a>
+							<a className={classes.link}>Order</a>
 						</Link>
 					</li>
 					<li>
 						<Link href='/contact'>
-							<a>Contact us</a>
+							<a className={classes.link}>Contact us</a>
 						</Link>
 					</li>
 				</ul>

@@ -1,0 +1,46 @@
+.section {
+	justify-self: center;
+	margin: 1rem 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+
+	width: 250px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	height: 3rem;
+	font-weight: 400;
+}
+.price {
+	text-align: center;
+}
+
+.order {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	height: 3rem;
+	padding: 2rem;
+}
+
+.foto {
+	height: 200px;
+	background-size: 100%;
+	background-position: center;
+	transition: all 0.3s ease-in-out;
+}
+
+.section:hover > .foto {
+	background-size: 110%;
+}

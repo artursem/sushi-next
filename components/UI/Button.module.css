@@ -1,0 +1,26 @@
+.btn {
+	border: 1px solid var(--accent);
+	border-radius: 5px;
+	background: var(--accent);
+
+	color: var(--white);
+	font-weight: 800;
+	text-transform: uppercase;
+	width: 120px;
+	height: 40px;
+	padding: 0.5rem;
+	cursor: pointer;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+	background: var(--active);
+	border-color: var(--active);
+}
+
+.btn:active {
+	transform: translateY(1px);
+	box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.3);
+}

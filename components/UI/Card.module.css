@@ -3,4 +3,5 @@
 	flex-direction: column;
 
 	border: 1px solid #010101;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
