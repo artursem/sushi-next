@@ -9,6 +9,7 @@
 	width: 100%;
 	background-color: var(--white);
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	z-index: 1;
 }
 
 .logo {
