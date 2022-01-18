@@ -1,10 +1,22 @@
-import classes from './MenuItem.module.css';
+import { useDispatch } from 'react-redux';
+import { cartActions } from '../../store/cartSlice';
 import Leaf from './icons/Leaf';
 import Button from './Button';
+import classes from './MenuItem.module.css';
+
 const MenuItem = ({ item }) => {
-	const displayedPrice = `$${Number.parseFloat(item.price).toFixed(2)}`;
+	const { id, name, price, vege } = item;
+	const dispatch = useDispatch();
+
+	const displayedPrice = `$${Number.parseFloat(price).toFixed(2)}`;
 	const handleAddToCart = () => {
-		console.log(item.id, item.name);
+		dispatch(
+			cartActions.addItemToCart({
+				id,
+				name,
+				price,
+			})
+		);
 	};
 
 	return (
@@ -12,14 +24,14 @@ const MenuItem = ({ item }) => {
 			<div
 				className={classes.foto}
 				style={{
-					backgroundImage: `url('/sushi/${item.id}.jpg')`,
+					backgroundImage: `url('/sushi/${id}.jpg')`,
 				}}
 			>
 				foto
 			</div>
 			<div className={classes.name}>
-				{item.name}
-				{item.vege && <Leaf />}
+				{name}
+				{vege && <Leaf />}
 			</div>
 			<div className={classes.price}>{displayedPrice}</div>
 			<div className={classes.order}>

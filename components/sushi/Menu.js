@@ -7,7 +7,6 @@ import classes from './Menu.module.css';
 const Menu = (props) => {
 	const [showCart, setShowCart] = useState(false);
 	const handleShowCart = () => {
-		console.log('show');
 		setShowCart(true);
 	};
 	const handleHideCart = () => {
