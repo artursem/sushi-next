@@ -1,5 +1,5 @@
 .btn {
-	border: 1px solid var(--accent);
+	border: 2px solid var(--accent);
 	border-radius: 5px;
 	background: var(--accent);
 
@@ -9,9 +9,10 @@
 
 	height: 40px;
 	padding: 0.5rem 1rem;
+	margin: 0.1rem;
 	cursor: pointer;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-	transition: background-color 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .btn:hover,
@@ -23,4 +24,18 @@
 .btn:active {
 	transform: translateY(1px);
 	box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.full {
+	width: 100%;
+}
+
+.btnSecondary {
+	background: var(--white);
+	color: var(--accent);
+}
+.btnSecondary:hover,
+.btnSecondary:active {
+	background: var(--active);
+	color: var(--white);
 }

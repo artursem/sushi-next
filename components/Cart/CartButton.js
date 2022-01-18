@@ -27,7 +27,6 @@ const CartButton = (props) => {
 			clearTimeout(timer);
 		};
 	}, [items]);
-	console.log(numberOfCartItems);
 	return (
 		<button className={btnClasses} onClick={props.onClick}>
 			{numberOfCartItems > 0 && (

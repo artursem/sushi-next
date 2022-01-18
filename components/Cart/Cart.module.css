@@ -18,3 +18,15 @@
 	backdrop-filter: blur(2px);
 	z-index: 2;
 }
+
+.cart > p {
+	margin: 1rem;
+	text-align: center;
+}
+.total {
+	text-align: center;
+}
+
+.order {
+	margin: 1rem 0.3rem;
+}

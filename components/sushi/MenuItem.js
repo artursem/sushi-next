@@ -35,7 +35,7 @@ const MenuItem = ({ item }) => {
 			</div>
 			<div className={classes.price}>{displayedPrice}</div>
 			<div className={classes.order}>
-				<Button onClick={handleAddToCart}>Order</Button>
+				<Button onClick={handleAddToCart}>Add to cart</Button>
 			</div>
 		</section>
 	);
