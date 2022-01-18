@@ -16,18 +16,13 @@ const NavHeader = () => {
 						</Link>
 					</li>
 					<li>
-						<Link href='/reservations'>
-							<a className={classes.link}>Reservations</a>
-						</Link>
-					</li>
-					<li>
 						<Link href='/order'>
 							<a className={classes.link}>Order</a>
 						</Link>
 					</li>
 					<li>
-						<Link href='/contact'>
-							<a className={classes.link}>Contact us</a>
+						<Link href='/reservations'>
+							<a className={classes.link}>Reservations</a>
 						</Link>
 					</li>
 				</ul>
