@@ -26,3 +26,40 @@
 	transform: translateY(1px);
 	box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.3);
 }
+
+.bubble {
+	position: fixed;
+	right: 58px;
+
+	width: 30px;
+	height: 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: hsl(220, 60%, 40%);
+	border-radius: 15px;
+}
+
+.bump {
+	animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+	0% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+	30% {
+		transform: scale(1.1);
+	}
+	50% {
+		transform: scale(1.15);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

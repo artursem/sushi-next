@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../../store/cartSlice';
-import Leaf from './icons/Leaf';
-import Button from './Button';
+import Leaf from '../UI/icons/Leaf';
+import Button from '../UI/Button';
 import classes from './MenuItem.module.css';
 
 const MenuItem = ({ item }) => {

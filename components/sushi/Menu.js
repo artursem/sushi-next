@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react';
-import CartButton from '../UI/CartButton';
-import Cart from './Cart';
-import MenuItem from '../UI/MenuItem';
+import CartButton from '../Cart/CartButton';
+import Cart from '../Cart/Cart';
+import MenuItem from './MenuItem';
 import classes from './Menu.module.css';
 
 const Menu = (props) => {

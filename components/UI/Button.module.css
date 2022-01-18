@@ -6,9 +6,9 @@
 	color: var(--white);
 	font-weight: 800;
 	text-transform: uppercase;
-	width: 120px;
+
 	height: 40px;
-	padding: 0.5rem;
+	padding: 0.5rem 1rem;
 	cursor: pointer;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 	transition: background-color 0.2s ease-in-out;
