@@ -20,7 +20,7 @@ const Menu = (props) => {
 	return (
 		<Fragment>
 			<CartButton onClick={handleShowCart} />
-			{showCart && <Cart onClick={handleHideCart} />}
+			{showCart && <Cart onHideCart={handleHideCart} />}
 			<ul className={classes.menu}>{menuItems}</ul>
 		</Fragment>
 	);
