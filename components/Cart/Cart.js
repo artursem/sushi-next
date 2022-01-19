@@ -8,9 +8,6 @@ import classes from './Cart.module.css';
 const Cart = (props) => {
 	const [showForm, setShowForm] = useState(false);
 	const cartProducts = useSelector((state) => state.cart.items);
-	const total = cartProducts.reduce((sum, val) => {
-		return sum + val.totalPrice;
-	}, 0);
 
 	const list = cartProducts.map((item) => (
 		<CartItem key={item.id} item={item} />
@@ -23,11 +20,23 @@ const Cart = (props) => {
 		setShowForm(false);
 	};
 
+	const total = cartProducts.reduce((sum, val) => {
+		return sum + val.totalPrice;
+	}, 0);
 	const displayedTotal = `$${Number.parseFloat(total).toFixed(2)}`;
-	return (
+
+	let cartContent = (
 		<Fragment>
-			<div className={classes.overlay} onClick={props.onClick}></div>
-			<div className={classes.cart}>
+			<p>Your cart is empty</p>
+			<Button full onClick={props.onClick}>
+				Close cart
+			</Button>
+		</Fragment>
+	);
+
+	if (cartProducts.length > 0) {
+		cartContent = (
+			<Fragment>
 				<p>Your order:</p>
 				<ul>{list}</ul>
 				<div className={classes.total}>
@@ -42,7 +51,14 @@ const Cart = (props) => {
 						</Button>
 					)}
 				</div>
-			</div>
+			</Fragment>
+		);
+	}
+
+	return (
+		<Fragment>
+			<div className={classes.overlay} onClick={props.onClick}></div>
+			<div className={classes.cart}>{cartContent}</div>
 		</Fragment>
 	);
 };
