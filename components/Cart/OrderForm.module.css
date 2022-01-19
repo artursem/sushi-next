@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
+	margin-top: 2rem;
 }
 
 .label {
@@ -22,9 +23,14 @@
 	padding: 0.3rem;
 }
 
-.error {
-	background: var(--error);
+.error > input {
+	background: var(--errorBg);
 	border: 1px solid var(--error);
+	color: var(--error);
+}
+
+.errorText {
+	color: var(--error);
 }
 
 .actions {
