@@ -109,7 +109,7 @@ const OrderForm = (props) => {
 				)}
 			</div>
 			<div className={classes.actions}>
-				<Button type='submit' full>
+				<Button type='submit' full disabled={!formIsValid}>
 					Submit
 				</Button>
 				<Button full secondary onClick={props.onClick}>
@@ -121,31 +121,3 @@ const OrderForm = (props) => {
 };
 
 export default OrderForm;
-
-// <form onSubmit={handleSubmit} className={classes.form}>
-// 	<label htmlFor='fullName' className={classes.label}>
-// 		Name:
-// 		<input id='fullName' type='text' className={classes.input} />
-// 	</label>
-// 	<label htmlFor='address' className={classes.label}>
-// 		Address:
-// 		<input id='address' type='text' className={classes.input} />
-// 	</label>
-// 	<label htmlFor='phone' className={classes.label}>
-// 		Phone number:
-// 		<input
-// 			id='phone'
-// 			type='number'
-// 			min='9'
-// 			className={`${classes.input} ${classes.error}`}
-// 		/>
-// 	</label>
-// 	<div className={classes.actions}>
-// 		<Button type='submit' full>
-// 			Submit
-// 		</Button>
-// 		<Button full secondary onClick={props.onClick}>
-// 			Cancel
-// 		</Button>
-// 	</div>
-// </form>

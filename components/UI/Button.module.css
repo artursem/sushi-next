@@ -1,5 +1,5 @@
 .btn {
-	border: 2px solid var(--accent);
+	border: 1px solid var(--accent);
 	border-radius: 5px;
 	background: var(--accent);
 
@@ -38,4 +38,13 @@
 .btnSecondary:active {
 	background: var(--active);
 	color: var(--white);
+}
+
+.btn:disabled,
+.btn:disabled:hover,
+.btn:disabled:active {
+	background-color: #ccc;
+	border-color: #ccc;
+	color: #292929;
+	cursor: not-allowed;
 }
