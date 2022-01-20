@@ -5,18 +5,11 @@
 	width: 50px;
 	height: 50px;
 	padding: 0.3rem;
-	/* border: 1px solid orangered; */
 	border: none;
 	border-radius: 10px;
 	font-size: 1rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
-}
-
-.button:hover,
-.button:active {
-	background-color: var(--gray);
 }
