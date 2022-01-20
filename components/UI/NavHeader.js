@@ -18,6 +18,7 @@ const NavHeader = () => {
 	};
 
 	const linksStyle = `${classes.links} ${menuOpen ? classes.show : ''}`;
+
 	return (
 		<header className={classes.header}>
 			<span className={classes.logo}>
