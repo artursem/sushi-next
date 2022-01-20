@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
 
 :root {
-	--black: #1f1f1f;
-	--coal: #8d8d8d;
 	--white: #fefefe;
-	--gray: rgba(255, 255, 255, 0.9);
-	--dark: hsl(1, 1, 30%);
+	--lightGray: #cdcccb;
+	--gray: #e6e6e6;
+	--coal: #8d8d8d;
+	--dark: #4d4c4c;
+	--black: #1f1f1f;
 	--accent: hsl(12, 50%, 50%);
 	--active: hsl(12, 80%, 70%);
 	--error: hsl(12, 40%, 40%);
@@ -19,6 +20,7 @@ body {
 	font-family: 'Merriweather Sans', sans-serif;
 	color: var(--black);
 	font-weight: 300;
+	line-height: 1.5rem;
 }
 a {
 	color: inherit;

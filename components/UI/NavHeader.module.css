@@ -12,7 +12,7 @@
 	z-index: 1;
 }
 
-.logo {
+.logo a {
 	margin: 0;
 	padding: 0 1rem;
 	display: flex;
@@ -36,13 +36,14 @@
 	padding: 0 1rem;
 }
 
-a.link {
+.links a {
 	color: var(--black);
 	font-weight: 400;
 	transition: color 0.3s ease-in-out;
 }
 
-a.link:hover,
-a.link:active {
+.links a:hover,
+.links a:active,
+a.active {
 	color: var(--accent);
 }

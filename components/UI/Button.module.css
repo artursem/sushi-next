@@ -43,8 +43,8 @@
 .btn:disabled,
 .btn:disabled:hover,
 .btn:disabled:active {
-	background-color: #ccc;
-	border-color: #ccc;
-	color: #292929;
+	background-color: var(--errorBg);
+	border-color: var(--errorBg);
+	color: var(--white);
 	cursor: not-allowed;
 }

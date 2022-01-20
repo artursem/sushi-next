@@ -4,7 +4,9 @@ import { cartActions } from '../../store/cartSlice';
 import CartItem from './CartItem';
 import Button from '../UI/Button';
 import OrderForm from './OrderForm';
+import GenericButton from '../UI/GenericButton';
 import classes from './Cart.module.css';
+import CloseIcon from '../UI/icons/CloseIcon';
 
 const Cart = (props) => {
 	const [showForm, setShowForm] = useState(false);
@@ -47,12 +49,12 @@ const Cart = (props) => {
 	const displayedTotal = `$${Number.parseFloat(total).toFixed(2)}`;
 
 	let cartContent = (
-		<Fragment>
-			<p>Your cart is empty</p>
-			<Button full onClick={props.onHideCart}>
-				Close cart
-			</Button>
-		</Fragment>
+		<div className={classes.emptyCart}>
+			<p>
+				Your cart is empty.
+				<br /> Please, add some items.
+			</p>
+		</div>
 	);
 
 	if (cartProducts.length > 0) {
@@ -79,7 +81,14 @@ const Cart = (props) => {
 	return (
 		<Fragment>
 			<div className={classes.overlay} onClick={props.onHideCart}></div>
-			<div className={classes.cart}>{cartContent}</div>
+			<div className={classes.cart}>
+				<div className={classes.closeBtnSection}>
+					<GenericButton onClick={props.onHideCart}>
+						<CloseIcon />
+					</GenericButton>
+				</div>
+				{cartContent}
+			</div>
 		</Fragment>
 	);
 };

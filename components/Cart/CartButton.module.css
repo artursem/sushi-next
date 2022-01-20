@@ -1,5 +1,6 @@
 .cartBtn {
 	position: fixed;
+	top: 105px;
 	right: 5px;
 	border: 1px solid var(--accent);
 	border-radius: 5px;

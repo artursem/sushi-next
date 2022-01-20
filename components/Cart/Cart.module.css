@@ -6,6 +6,8 @@
 	width: 400px;
 	z-index: 3;
 	background: var(--white);
+	padding-top: 2rem;
+	overflow-y: auto;
 }
 
 .overlay {
@@ -20,13 +22,31 @@
 }
 
 .cart > p {
-	margin: 1rem;
+	margin: 2rem 0;
 	text-align: center;
 }
 .total {
 	text-align: center;
+	margin: 2rem 0;
 }
 
 .order {
 	margin: 1rem 0.3rem;
+}
+.emptyCart {
+	margin: 2rem;
+	text-align: center;
+}
+.closeBtnSection button {
+	margin-left: auto;
+	margin-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+	.overlay {
+		display: none;
+	}
+	.cart {
+		width: 100%;
+	}
 }
