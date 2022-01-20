@@ -13,9 +13,6 @@ const NavHeader = () => {
 		setMenuOpen((prevState) => !prevState);
 		console.log(menuOpen);
 	};
-	const closeMenu = () => {
-		setMenuOpen(false);
-	};
 
 	const linksStyle = `${classes.links} ${menuOpen ? classes.show : ''}`;
 
@@ -23,7 +20,7 @@ const NavHeader = () => {
 		<header className={classes.header}>
 			<span className={classes.logo}>
 				<Link href='/'>
-					<a onClick={closeMenu}>
+					<a onClick={toggleMenuOpen}>
 						<Logo />
 						<h1 className={classes.title}>omakase</h1>
 					</a>
@@ -34,7 +31,7 @@ const NavHeader = () => {
 					<li>
 						<Link href='/'>
 							<a
-								onClick={closeMenu}
+								onClick={toggleMenuOpen}
 								className={router.pathname === '/' ? `${classes.active}` : ``}
 							>
 								Home
@@ -44,7 +41,7 @@ const NavHeader = () => {
 					<li>
 						<Link href='/order'>
 							<a
-								onClick={closeMenu}
+								onClick={toggleMenuOpen}
 								className={
 									router.pathname === '/order' ? `${classes.active}` : ``
 								}
@@ -56,7 +53,7 @@ const NavHeader = () => {
 					<li>
 						<Link href='/reservations'>
 							<a
-								onClick={closeMenu}
+								onClick={toggleMenuOpen}
 								className={
 									router.pathname === '/reservations' ? `${classes.active}` : ``
 								}
